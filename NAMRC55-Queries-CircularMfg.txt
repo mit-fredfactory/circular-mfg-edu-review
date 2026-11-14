@@ -1,0 +1,367 @@
+# Web of Science Search Strategy (v0.1)
+
+# Database: Web of Science Core Collection
+
+# Annotations: the 'Comment:' lines were added by the authors to map each
+# search to the passes and queries of the paper. Searches #7 and #8 of the
+# original export were swapped so that, as everywhere else, the unfiltered
+# search precedes the filtered one; the #-references in #18 and #19 were
+# updated to match. Query strings, run dates and result counts are otherwise
+# as exported.
+
+# Entitlements:
+
+- WOS.SCI: 1900 to 2026
+- WOS.AHCI: 1975 to 2026
+- WOS.BHCI: 2005 to 2026
+- WOS.BSCI: 2005 to 2026
+- WOS.ESCI: 2021 to 2026
+- WOS.ISTP: 1990 to 2026
+- WOS.SSCI: 1956 to 2026
+- WOS.ISSHP: 1990 to 2026
+
+
+# Searches:
+
+1: TI=("polylactic acid" OR "poly(lactic
+acid)" OR polylactide OR "poly(lactide)"
+OR "poly(L-lactide)" OR
+"poly(D,L-lactide)" OR "poly(L-lactic
+acid)" OR PLLA OR "PLA" OR "ethylene vinyl
+acetate" OR "ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR (EVA
+NEAR/3 (copolymer* OR polymer* OR foam* OR
+resin* OR adhesive* OR waste* OR scrap* OR
+footwear OR shoe* OR sole*))) AND
+TS=(((recycl* OR reprocess* OR
+remanufactur* OR remelt* OR regrind* OR
+upcycl*) NEAR/5 (mechanical* OR
+thermomechanical OR melt* OR extru* OR
+inject* OR mold* OR mould* OR filament* OR
+FDM OR FFF OR print* OR cast* OR cycle* OR
+repeated OR multiple OR successive OR
+loop*)) OR "mechanical recycl*" OR
+"closed-loop recycl*" OR "reprocessing
+cycle*") AND TS=(degradat* OR "molecular
+weight" OR crystallin* OR rheolog* OR
+viscosit* OR "melt flow" OR "mechanical
+propert*" OR "thermal propert*" OR tensile
+OR "life cycle assessment" OR LCA OR
+"end-of-life" OR "energy consumption" OR
+"specific energy" OR depolymeri*) NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR "PV module*" OR
+encapsulant* OR scaffold* OR "drug
+deliver*" OR "drug release" OR "tissue
+engineering" OR implant* OR suture* OR
+stent* OR wound* OR microsphere* OR
+extravehicular OR "economic value added"
+OR phospholipase)				Date Run: Wed Nov 11 2026 23:12:03 GMT-0500 (Eastern Standard Time)		Results: 369
+Comment: Pass 1, Query 1a (reprocessing of PLA and EVA), before language and document-type filters.
+
+2: TI=("polylactic acid" OR "poly(lactic
+acid)" OR polylactide OR "poly(lactide)"
+OR "poly(L-lactide)" OR
+"poly(D,L-lactide)" OR "poly(L-lactic
+acid)" OR PLLA OR "PLA" OR "ethylene vinyl
+acetate" OR "ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR (EVA
+NEAR/3 (copolymer* OR polymer* OR foam* OR
+resin* OR adhesive* OR waste* OR scrap* OR
+footwear OR shoe* OR sole*))) AND
+TS=(((recycl* OR reprocess* OR
+remanufactur* OR remelt* OR regrind* OR
+upcycl*) NEAR/5 (mechanical* OR
+thermomechanical OR melt* OR extru* OR
+inject* OR mold* OR mould* OR filament* OR
+FDM OR FFF OR print* OR cast* OR cycle* OR
+repeated OR multiple OR successive OR
+loop*)) OR "mechanical recycl*" OR
+"closed-loop recycl*" OR "reprocessing
+cycle*") AND TS=(degradat* OR "molecular
+weight" OR crystallin* OR rheolog* OR
+viscosit* OR "melt flow" OR "mechanical
+propert*" OR "thermal propert*" OR tensile
+OR "life cycle assessment" OR LCA OR
+"end-of-life" OR "energy consumption" OR
+"specific energy" OR depolymeri*) NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR "PV module*" OR
+encapsulant* OR scaffold* OR "drug
+deliver*" OR "drug release" OR "tissue
+engineering" OR implant* OR suture* OR
+stent* OR wound* OR microsphere* OR
+extravehicular OR "economic value added"
+OR phospholipase) and Article or Proceeding Paper or Review Article or Early Access (Document Types) and English (Languages)				Date Run: Wed Nov 11 2026 23:13:06 GMT-0500 (Eastern Standard Time)		Results: 365
+Comment: Pass 1, Query 1a, after language and document-type filters (365 records screened).
+
+3: (((TI=("ethylene vinyl acetate" OR
+"ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR EVA)
+AND TI=(degradation OR decomposition OR
+deacetylat* OR pyrolysis OR "thermal
+stability" OR "thermal aging" OR "thermal
+ageing" OR "thermo-oxidat*") NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR encapsulant* OR "flame
+retard*" OR "fire retard*")) OR TS=(("hot
+melt*" OR "hot-melt*") AND ("ethylene
+vinyl acetate" OR "ethylene-vinyl acetate"
+OR EVA) AND ("thermal stability" OR "heat
+stability" OR "thermal aging" OR "thermal
+ageing" OR "heat aging" OR "heat ageing"
+OR "pot life" OR charring OR gelation OR
+"gel content" OR "viscosity stability" OR
+"thermo-oxidative" OR oxidat* OR "thermal
+degradation")) OR (TI=("ethylene vinyl
+acetate" OR "ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR EVA)
+AND TS=(recycl* OR reprocess* OR regrind*
+OR scrap* OR vitrimer* OR "covalent
+adaptable" OR (waste* NEAR/3 (EVA OR foam*
+OR footwear OR shoe* OR sole*))) NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR encapsulant* OR asphalt*
+OR bitumen* OR "drug deliver*" OR "drug
+release")) OR TS=(("hot melt*" OR
+"hot-melt*") AND ("ethylene vinyl acetate"
+OR "ethylene-vinyl acetate" OR EVA) AND
+(rheolog* OR tackif* OR wax* OR crosslink*
+OR reprocess* OR recycl*))) NOT (#2))				Date Run: Wed Nov 11 2026 23:14:47 GMT-0500 (Eastern Standard Time)		Results: 354
+Comment: Pass 1, Query 1b (EVA thermal degradation, hot-melt heat stability, recyclability and hot-melt formulation), excluding the filtered Query 1a set (#2); before language and document-type filters.
+
+4: (((TI=("ethylene vinyl acetate" OR
+"ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR EVA)
+AND TI=(degradation OR decomposition OR
+deacetylat* OR pyrolysis OR "thermal
+stability" OR "thermal aging" OR "thermal
+ageing" OR "thermo-oxidat*") NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR encapsulant* OR "flame
+retard*" OR "fire retard*")) OR TS=(("hot
+melt*" OR "hot-melt*") AND ("ethylene
+vinyl acetate" OR "ethylene-vinyl acetate"
+OR EVA) AND ("thermal stability" OR "heat
+stability" OR "thermal aging" OR "thermal
+ageing" OR "heat aging" OR "heat ageing"
+OR "pot life" OR charring OR gelation OR
+"gel content" OR "viscosity stability" OR
+"thermo-oxidative" OR oxidat* OR "thermal
+degradation")) OR (TI=("ethylene vinyl
+acetate" OR "ethylene-vinyl acetate" OR
+"poly(ethylene-co-vinyl acetate)" OR EVA)
+AND TS=(recycl* OR reprocess* OR regrind*
+OR scrap* OR vitrimer* OR "covalent
+adaptable" OR (waste* NEAR/3 (EVA OR foam*
+OR footwear OR shoe* OR sole*))) NOT
+TS=(photovoltaic* OR "solar cell*" OR
+"solar panel*" OR encapsulant* OR asphalt*
+OR bitumen* OR "drug deliver*" OR "drug
+release")) OR TS=(("hot melt*" OR
+"hot-melt*") AND ("ethylene vinyl acetate"
+OR "ethylene-vinyl acetate" OR EVA) AND
+(rheolog* OR tackif* OR wax* OR crosslink*
+OR reprocess* OR recycl*))) NOT (#2)) and English (Languages) and Article or Review Article or Proceeding Paper or Early Access (Document Types)				Date Run: Wed Nov 11 2026 23:17:16 GMT-0500 (Eastern Standard Time)		Results: 332
+Comment: Pass 1, Query 1b, after language and document-type filters (332 records screened).
+
+5: TS=(("distributed recycling" OR
+recyclebot* OR "desktop extrusion" OR
+"filament extruder*" OR "filament maker*"
+OR "Precious Plastic" OR "fused granular
+fabrication" OR "fused particle
+fabrication" OR ((cost OR desktop OR
+benchtop OR tabletop OR affordable OR
+inexpensive OR portable OR manual OR
+homemade OR DIY) NEAR/3 (extruder* OR
+injection OR shredder* OR granulator*)))
+AND (recycl* OR reprocess* OR regrind* OR
+upcycl* OR "plastic waste*" OR "waste
+plastic*") AND (plastic* OR polymer* OR
+thermoplastic*)) NOT TS=(pharmaceut* OR
+drug* OR tablet* OR food* OR snack* OR
+bioprint*)				Date Run: Wed Nov 11 2026 23:18:16 GMT-0500 (Eastern Standard Time)		Results: 126
+Comment: Pass 1, Query 2 (low-cost, desktop and distributed recycling hardware), before language and document-type filters.
+
+6: TS=(("distributed recycling" OR
+recyclebot* OR "desktop extrusion" OR
+"filament extruder*" OR "filament maker*"
+OR "Precious Plastic" OR "fused granular
+fabrication" OR "fused particle
+fabrication" OR ((cost OR desktop OR
+benchtop OR tabletop OR affordable OR
+inexpensive OR portable OR manual OR
+homemade OR DIY) NEAR/3 (extruder* OR
+injection OR shredder* OR granulator*)))
+AND (recycl* OR reprocess* OR regrind* OR
+upcycl* OR "plastic waste*" OR "waste
+plastic*") AND (plastic* OR polymer* OR
+thermoplastic*)) NOT TS=(pharmaceut* OR
+drug* OR tablet* OR food* OR snack* OR
+bioprint*) and Article or Proceeding Paper or Review Article or Early Access (Document Types) and English (Languages)				Date Run: Wed Nov 11 2026 23:18:30 GMT-0500 (Eastern Standard Time)		Results: 124
+Comment: Pass 1, Query 2, after language and document-type filters (124 records screened).
+
+7: #5 NOT (#2 OR #4)				Date Run: Wed Nov 11 2026 23:26:51 GMT-0500 (Eastern Standard Time)		Results: 115
+Comment: Overlap check within Pass 1: unfiltered Query 2 records not retrieved by Query 1a or 1b.
+
+8: #6 NOT (#2 OR #4)				Date Run: Wed Nov 11 2026 23:25:50 GMT-0500 (Eastern Standard Time)		Results: 113
+Comment: Overlap check within Pass 1: filtered Query 2 records not retrieved by Query 1a or 1b. 124 - 113 = 11 Query 2 records also retrieved by Query 1, as reported in Section 2.2.1.
+
+9: (TI=("energy consumption" OR "energy
+demand" OR "energy efficien*" OR "energy
+use" OR "energy usage" OR "energy
+monitor*" OR "power consumption" OR
+"specific energy" OR "electricity
+consumption") OR TS=("specific energy
+consumption")) AND TI=(extru* OR
+"injection mold*" OR "injection mould*" OR
+"compression mold*" OR "compression
+mould*" OR casting OR "hot melt*" OR
+"material extrusion" OR "polymer
+processing" OR remanufactur* OR recycl*)
+AND TS=(polymer* OR plastic* OR thermoplastic*) NOT TS=("size exclusion" OR "size-exclusion")				Date Run: Wed Nov 11 2026 23:33:49 GMT-0500 (Eastern Standard Time)		Results: 130
+Comment: Pass 2, energy query (energy consumption in polymer processing), before language and document-type filters.
+
+10: (TI=("energy consumption" OR "energy
+demand" OR "energy efficien*" OR "energy
+use" OR "energy usage" OR "energy
+monitor*" OR "power consumption" OR
+"specific energy" OR "electricity
+consumption") OR TS=("specific energy
+consumption")) AND TI=(extru* OR
+"injection mold*" OR "injection mould*" OR
+"compression mold*" OR "compression
+mould*" OR casting OR "hot melt*" OR
+"material extrusion" OR "polymer
+processing" OR remanufactur* OR recycl*)
+AND TS=(polymer* OR plastic* OR thermoplastic*) NOT TS=("size exclusion" OR "size-exclusion") and English (Languages) and Article or Proceeding Paper or Review Article or Early Access (Document Types)				Date Run: Wed Nov 11 2026 23:34:29 GMT-0500 (Eastern Standard Time)		Results: 119
+Comment: Pass 2, energy query, after language and document-type filters (119 records screened).
+
+11: TI=("recycling cycle*" OR "reprocessing
+cycle*" OR "multiple recycling" OR
+"repeated recycling" OR "multiple
+reprocessing" OR "repeated reprocessing"
+OR "multiple extrusion*" OR "repeated
+extrusion*") AND TS=(polylactide OR
+"polylactic acid" OR "poly(lactic acid)"
+OR "aliphatic polyester*" OR "ethylene
+vinyl acetate" OR "ethylene-vinyl
+acetate")				Date Run: Wed Nov 11 2026 23:36:13 GMT-0500 (Eastern Standard Time)		Results: 18
+Comment: Pass 2, multiple-cycles query (PLA, aliphatic polyesters and EVA reprocessed through multiple cycles).
+
+12: #11 NOT #10				Date Run: Wed Nov 11 2026 23:38:22 GMT-0500 (Eastern Standard Time)		Results: 18
+Comment: Pass 2, multiple-cycles query with the filtered energy set removed; none of the 18 records overlapped (18 records screened).
+
+13: TS=((("low-cost" OR "low cost" OR
+inexpensive OR affordable OR "open-source"
+OR "open source" OR "open hardware" OR
+desktop OR benchtop OR "bench-top" OR
+tabletop OR DIY OR homemade) NEAR/5
+(extruder* OR extrusion OR "injection
+mold*" OR "injection mould*" OR
+"compression mold*" OR "compression
+mould*" OR granulator* OR shredder* OR
+"mold monitor*" OR "mould monitor*" OR
+"filament maker*" OR "recycling machine*"
+OR "recycling device*")) OR recyclebot* OR
+"fused granular fabrication" OR "fused
+particle fabrication") AND
+TS=(instrumented OR "data acquisition" OR
+"data logg*" OR "process monitor*" OR
+"condition monitor*" OR "real-time
+monitor*" OR "online monitor*" OR "in-line
+monitor*" OR "inline monitor*" OR "energy
+monitor*" OR "power monitor*" OR "energy
+consumption" OR "power consumption" OR
+"specific energy" OR "energy efficien*" OR
+"mold monitor*" OR "mould monitor*" OR
+"cavity pressure" OR "melt pressure" OR
+thermocouple* OR "load cell*" OR ((sensor*OR transducer*) NEAR/3 (temperature OR
+pressure OR current OR power OR energy OR
+diameter OR torque OR force OR speed)) OR
+"diameter control*" OR "diameter measur*"
+OR "closed-loop control" OR IoT OR
+"Internet of Things" OR "digital twin*" OR
+Arduino OR "Raspberry Pi" OR ESP32 OR
+microcontroller* OR "machine vision" OR
+"computer vision") AND TS=(polymer* OR
+plastic* OR thermoplastic* OR filament* OR
+"injection mold*" OR "injection mould*")
+NOT TS=(pharmaceut* OR drug* OR tablet* OR
+food* OR snack* OR bioprint* OR scaffold*
+OR "tissue engineering" OR "strain
+sensor*" OR wearable* OR biosensor* OR
+"electrochemical sensor*" OR "gas sensor*"
+OR "humidity sensor*" OR "printed sensor*"
+OR "printed electronics" OR concrete OR
+cement*)				Date Run: Wed Nov 11 2026 23:40:18 GMT-0500 (Eastern Standard Time)		Results: 39
+Comment: Pass 3, instrumented low-cost recycling and remanufacturing platforms (39 records screened).
+
+14: TI=("Industry 5.0" OR "Industry 4.0 and
+5.0" OR "fifth industrial revolution") AND
+TI=(educat* OR curricul* OR pedagog* OR
+teach* OR "learning factor*" OR circular*
+OR remanufactur* OR recycl* OR
+"sustainable manufactur*" OR
+"sustainability management" OR "maturity
+model*") NOT TI=(healthcare OR medical OR
+agricultur* OR "supply chain*" OR
+logistic* OR construction OR tourism OR
+"6G")				Date Run: Wed Nov 11 2026 23:42:19 GMT-0500 (Eastern Standard Time)		Results: 135
+Comment: Pass 4, Industry 5.0 in education and sustainable manufacturing, before language and document-type filters.
+
+15: TI=("Industry 5.0" OR "Industry 4.0 and
+5.0" OR "fifth industrial revolution") AND
+TI=(educat* OR curricul* OR pedagog* OR
+teach* OR "learning factor*" OR circular*
+OR remanufactur* OR recycl* OR
+"sustainable manufactur*" OR
+"sustainability management" OR "maturity
+model*") NOT TI=(healthcare OR medical OR
+agricultur* OR "supply chain*" OR
+logistic* OR construction OR tourism OR
+"6G") and English (Languages) and Article or Proceeding Paper or Review Article or Early Access (Document Types)				Date Run: Wed Nov 11 2026 23:43:04 GMT-0500 (Eastern Standard Time)		Results: 129
+Comment: Pass 4, after language and document-type filters (129 records screened).
+
+16: TI=(recycl* OR reprocess* OR upcycl* OR
+"plastic waste") AND TI=(educat* OR teach*
+OR classroom* OR "hands-on" OR curricul*
+OR pedagog* OR "student learning" OR
+"project-based") AND TS=(plastic* OR
+polymer* OR thermoplastic*)				Date Run: Wed Nov 11 2026 23:44:37 GMT-0500 (Eastern Standard Time)		Results: 40
+Comment: Pass 5, hands-on plastics-recycling education, before language and document-type filters.
+
+17: TI=(recycl* OR reprocess* OR upcycl* OR
+"plastic waste") AND TI=(educat* OR teach*
+OR classroom* OR "hands-on" OR curricul*
+OR pedagog* OR "student learning" OR
+"project-based") AND TS=(plastic* OR
+polymer* OR thermoplastic*) and English (Languages) and Article or Proceeding Paper or Review Article or Early Access (Document Types)				Date Run: Wed Nov 11 2026 23:44:47 GMT-0500 (Eastern Standard Time)		Results: 37
+Comment: Pass 5, after language and document-type filters (37 records screened).
+
+18: #2 OR #4 OR #8 OR #10 OR #12 OR #13 OR #15 OR #17				Date Run: Wed Nov 11 2026 23:50:06 GMT-0500 (Eastern Standard Time)		Results: 1126
+Comment: All eight screened sets combined: 1,126 unique records, against 1,163 screened per query (37 records screened more than once).
+
+19: #2 OR #4 OR #8				Date Run: Wed Nov 11 2026 23:54:07 GMT-0500 (Eastern Standard Time)		Results: 810
+Comment: Pass 1 combined (Queries 1a, 1b and 2), unique records.
+
+20: #10 OR #12				Date Run: Wed Nov 11 2026 23:55:52 GMT-0500 (Eastern Standard Time)		Results: 137
+Comment: Pass 2 combined (energy and multiple-cycles queries), unique records.
+
+21: #19 NOT (#20 OR #13 OR #15 OR #17)				Date Run: Wed Nov 11 2026 23:59:26 GMT-0500 (Eastern Standard Time)		Results: 786
+Comment: Pass 1 records retrieved by no other pass (810 - 786 = 24 shared with another pass).
+
+22: #20 NOT (#19 OR #13 OR #15 OR #17)				Date Run: Thu Nov 12 2026 00:00:49 GMT-0500 (Eastern Standard Time)		Results: 121
+Comment: Pass 2 records retrieved by no other pass (137 - 121 = 16 shared with another pass).
+
+23: #13 NOT (#19 OR #20 OR #15 OR #17)				Date Run: Thu Nov 12 2026 00:02:47 GMT-0500 (Eastern Standard Time)		Results: 30
+Comment: Pass 3 records retrieved by no other pass (39 - 30 = 9 shared with another pass, as reported in Section 2.2.3).
+
+24: #15 NOT (#19 OR #20 OR #13 OR #17)				Date Run: Thu Nov 12 2026 00:03:49 GMT-0500 (Eastern Standard Time)		Results: 129
+Comment: Pass 4 records retrieved by no other pass (no overlap).
+
+25: #17 NOT (#19 OR #20 OR #13 OR #15)				Date Run: Thu Nov 12 2026 00:05:06 GMT-0500 (Eastern Standard Time)		Results: 35
+Comment: Pass 5 records retrieved by no other pass (37 - 35 = 2 shared with another pass).
+
+26: #21 OR #22 OR #23 OR #24 OR #25				Date Run: Thu Nov 12 2026 00:07:48 GMT-0500 (Eastern Standard Time)		Results: 1101
+Comment: Records retrieved by exactly one pass; 1,126 - 1,101 = 25 records were retrieved by more than one pass.
